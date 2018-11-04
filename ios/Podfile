@@ -1,0 +1,34 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PinnedInk' do
+  pod 'AppCenterReactNativeShared', '~> 1.9.0'
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for PinnedInk
+  pod 'AppCenter/Crashes', '~> 1.10.0'
+  pod 'AppCenter/Analytics', '~> 1.10.0'
+
+  
+
+  platform :ios, '9.0'
+  target 'PinnedInkTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'PinnedInk-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for PinnedInk-tvOS
+
+  target 'PinnedInk-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
